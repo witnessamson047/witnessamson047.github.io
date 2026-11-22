@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#f4ecdd"/>
+
+  <!-- Map area -->
+  <rect x="45" y="45" width="710" height="360" rx="14" fill="#efe3cf" stroke="#dcc79d" stroke-width="2"/>
+
+  <!-- Streets -->
+  <g stroke="#dcc79d" stroke-width="6" fill="none">
+    <path d="M45 190 H755"/>
+    <path d="M45 300 H755"/>
+    <path d="M230 45 V405"/>
+    <path d="M430 45 V405"/>
+    <path d="M620 45 V405"/>
+  </g>
+  <g stroke="#e5d7bc" stroke-width="3" fill="none">
+    <path d="M45 245 H755"/>
+    <path d="M330 45 V405"/>
+    <path d="M525 45 V405"/>
+  </g>
+
+  <!-- Water / park -->
+  <rect x="45" y="45" width="185" height="120" rx="0" fill="#c9a227" opacity="0.06"/>
+  <text x="110" y="115" fill="#7d6a52" font-family="Inter, sans-serif" font-size="12">Dar City area</text>
+
+  <!-- Business pins -->
+  <g>
+    <circle cx="278" cy="140" r="10" fill="#c9a227"/>
+    <circle cx="278" cy="140" r="18" fill="none" stroke="#c9a227" stroke-width="2" opacity="0.3"/>
+    <circle cx="480" cy="240" r="10" fill="#c9a227"/>
+    <circle cx="480" cy="240" r="18" fill="none" stroke="#c9a227" stroke-width="2" opacity="0.3"/>
+    <circle cx="160" cy="340" r="10" fill="#c9a227"/>
+    <circle cx="668" cy="140" r="10" fill="#c9a227"/>
+    <circle cx="360" cy="352" r="10" fill="#22c55e"/>
+    <circle cx="560" cy="340" r="10" fill="#c9a227"/>
+  </g>
+
+  <!-- Highlighted pin: no website -->
+  <line x1="278" y1="140" x2="278" y2="108" stroke="#8a6516" stroke-width="2"/>
+  <rect x="196" y="66" width="164" height="40" rx="10" fill="#fdfaf2" stroke="#c9a227"/>
+  <text x="278" y="84" text-anchor="middle" fill="#8a6516" font-family="Inter, sans-serif" font-size="11" font-weight="bold">Nyumbani Salon</text>
+  <text x="278" y="98" text-anchor="middle" fill="#ef4444" font-family="Inter, sans-serif" font-size="10">⚠ no website found</text>
+
+  <!-- Result list -->
+  <rect x="452" y="96" width="270" height="250" rx="12" fill="#fdfaf2" opacity="0.94" stroke="#dcc79d"/>
+  <text x="470" y="128" fill="#3a2214" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="bold">Discovery results</text>
+  <g font-family="Inter, sans-serif" font-size="11">
+    <text x="470" y="158" fill="#3a2214">📍 Nyumbani Salon</text>
+    <text x="702" y="158" fill="#ef4444" text-anchor="end">no site</text>
+    <text x="470" y="190" fill="#3a2214">📍 Kariakoo Electronics</text>
+    <text x="702" y="190" fill="#7d6a52" text-anchor="end">has site</text>
+    <text x="470" y="222" fill="#3a2214">📍 Mama Lishe Spot</text>
+    <text x="702" y="222" fill="#ef4444" text-anchor="end">no site</text>
+    <text x="470" y="254" fill="#3a2214">📍 Amani Guesthouse</text>
+    <text x="702" y="254" fill="#7d6a52" text-anchor="end">has site</text>
+    <rect x="470" y="280" width="70" height="26" rx="8" fill="#c9a227"/>
+    <text x="505" y="297" text-anchor="middle" fill="#3a2214" font-size="11" font-weight="bold">23 found</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="400" y="428" text-anchor="middle" fill="#7d6a52" font-family="Inter, sans-serif" font-size="12">public map data → scraped → health-scored automatically, no one types a URL</text>
+</svg>

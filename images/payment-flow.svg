@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#f4ecdd"/>
+  <ellipse cx="620" cy="100" rx="260" ry="130" fill="#c9a227" opacity="0.08"/>
+
+  <!-- Invoice (left) -->
+  <rect x="70" y="70" width="290" height="310" rx="14" fill="#fdfaf2" stroke="#dcc79d" stroke-width="2"/>
+  <text x="98" y="112" fill="#3a2214" font-family="Space Grotesk, sans-serif" font-size="17" font-weight="bold">Invoice #0042</text>
+  <rect x="228" y="92" width="100" height="26" rx="8" fill="#f59e0b" opacity="0.18"/>
+  <text x="278" y="110" text-anchor="middle" fill="#f59e0b" font-family="Inter, sans-serif" font-size="11" font-weight="bold">50% deposit</text>
+
+  <g fill="#7d6a52" font-family="Inter, sans-serif" font-size="12">
+    <text x="98" y="152">Website care plan — 1 month</text>
+    <text x="598" y="152" text-anchor="end" fill="#3a2214">150,000 TZS</text>
+    <text x="98" y="184">Scanner diagnostic</text>
+    <text x="598" y="184" text-anchor="end" fill="#3a2214">75,000 TZS</text>
+    <text x="98" y="216">Domain &amp; hosting setup</text>
+    <text x="598" y="216" text-anchor="end" fill="#3a2214">40,000 TZS</text>
+  </g>
+  <line x1="98" y1="240" x2="598" y2="240" stroke="#dcc79d" stroke-width="2"/>
+  <text x="98" y="272" fill="#7d6a52" font-family="Inter, sans-serif" font-size="12">Due now (50%)</text>
+  <text x="598" y="274" text-anchor="end" fill="#8a6516" font-family="Space Grotesk, sans-serif" font-size="20" font-weight="bold">132,500 TZS</text>
+
+  <rect x="98" y="300" width="468" height="44" rx="10" fill="#c9a227"/>
+  <text x="332" y="327" text-anchor="middle" fill="#3a2214" font-family="Inter, sans-serif" font-size="14" font-weight="bold">Pay with PesaPal (mobile money)</text>
+
+  <!-- Arrow -->
+  <text x="384" y="236" text-anchor="middle" fill="#c9a227" font-size="30">→</text>
+
+  <!-- Receipt (right) -->
+  <rect x="640" y="70" width="290" height="310" rx="14" fill="#fdfaf2" stroke="#dcc79d" stroke-width="2" transform="translate(-20 0)"/>
+  <circle cx="765" cy="140" r="34" fill="#22c55e" opacity="0.15"/>
+  <path d="M750 140 l11 11 20 -22" stroke="#22c55e" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="765" y="205" text-anchor="middle" fill="#3a2214" font-family="Space Grotesk, sans-serif" font-size="17" font-weight="bold">Payment received</text>
+  <text x="765" y="228" text-anchor="middle" fill="#7d6a52" font-family="Inter, sans-serif" font-size="12">receipt sent automatically</text>
+  <rect x="700" y="252" width="130" height="34" rx="8" fill="#efe3cf" stroke="#dcc79d"/>
+  <text x="765" y="274" text-anchor="middle" fill="#8a6516" font-family="Inter, sans-serif" font-size="12">receipt.pdf · auto</text>
+  <rect x="700" y="300" width="130" height="34" rx="8" fill="#efe3cf" stroke="#dcc79d"/>
+  <text x="765" y="322" text-anchor="middle" fill="#8a6516" font-family="Inter, sans-serif" font-size="12">ledger reconciled ✓</text>
+</svg>

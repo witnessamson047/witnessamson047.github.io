@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Illustration of a learning journey">
+  <defs>
+    <linearGradient id="storyPaper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f1e6"/>
+      <stop offset="1" stop-color="#efe3cf"/>
+    </linearGradient>
+    <linearGradient id="storyLine" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#b98a24" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#b98a24"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#storyPaper)"/>
+
+  <g stroke="#b98a24" stroke-opacity="0.12">
+    <path d="M0 100h640M0 200h640M0 300h640"/>
+    <path d="M120 0v400M320 0v400M520 0v400"/>
+  </g>
+
+  <path d="M96 322 C 190 322, 196 236, 286 236 S 404 172, 520 96"
+        fill="none" stroke="url(#storyLine)" stroke-width="4"
+        stroke-linecap="round" stroke-dasharray="2 14"/>
+
+  <g>
+    <circle cx="96" cy="322" r="11" fill="#f7f1e6" stroke="#b98a24" stroke-width="3"/>
+    <circle cx="286" cy="236" r="14" fill="#f7f1e6" stroke="#b98a24" stroke-width="3"/>
+    <circle cx="286" cy="236" r="5" fill="#b98a24"/>
+    <circle cx="520" cy="96" r="20" fill="#b98a24"/>
+    <path d="M512 96l6 6 12-13" fill="none" stroke="#f7f1e6" stroke-width="3.5"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g fill="#2b1d13" opacity="0.55">
+    <rect x="128" y="286" width="54" height="7" rx="3.5"/>
+    <rect x="308" y="200" width="62" height="7" rx="3.5"/>
+    <rect x="432" y="140" width="70" height="7" rx="3.5"/>
+  </g>
+
+  <g opacity="0.5" fill="none" stroke="#b98a24" stroke-width="2">
+    <circle cx="540" cy="300" r="34"/>
+    <circle cx="540" cy="300" r="20"/>
+  </g>
+</svg>

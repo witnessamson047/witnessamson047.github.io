@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#f4ecdd"/>
+
+  <!-- Radar -->
+  <circle cx="230" cy="225" r="150" fill="none" stroke="#dcc79d" stroke-width="2"/>
+  <circle cx="230" cy="225" r="105" fill="none" stroke="#dcc79d" stroke-width="2"/>
+  <circle cx="230" cy="225" r="60"  fill="none" stroke="#dcc79d" stroke-width="2"/>
+  <path d="M230 225 L230 75 A150 150 0 0 1 380 225 Z" fill="#c9a227" opacity="0.15"/>
+  <line x1="230" y1="225" x2="290" y2="110" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="230" cy="225" r="6" fill="#8a6516"/>
+  <circle cx="310" cy="170" r="7" fill="#ef4444"/>
+  <circle cx="160" cy="290" r="7" fill="#22c55e"/>
+  <circle cx="320" cy="285" r="7" fill="#f59e0b"/>
+  <text x="230" y="410" text-anchor="middle" fill="#7d6a52" font-family="Inter, sans-serif" font-size="12">re-scraping businesses every 5 minutes</text>
+
+  <!-- Alert card -->
+  <rect x="450" y="75" width="300" height="300" rx="14" fill="#fdfaf2" stroke="#dcc79d" stroke-width="2"/>
+  <circle cx="485" cy="112" r="14" fill="#f59e0b" opacity="0.2"/>
+  <text x="485" y="117" text-anchor="middle" fill="#f59e0b" font-size="14">⚠</text>
+  <text x="510" y="118" fill="#3a2214" font-family="Space Grotesk, sans-serif" font-size="16" font-weight="bold">New alerts</text>
+
+  <g font-family="Inter, sans-serif" font-size="12">
+    <rect x="470" y="140" width="260" height="64" rx="10" fill="#efe3cf" stroke="#dcc79d"/>
+    <text x="486" y="164" fill="#3a2214" font-weight="bold">Asha Boutique · rating ↓</text>
+    <text x="486" y="182" fill="#7d6a52">4.6 → 3.9 on Google reviews</text>
+    <text x="486" y="197" fill="#f59e0b">alert sent to team · 2m ago</text>
+
+    <rect x="470" y="216" width="260" height="64" rx="10" fill="#efe3cf" stroke="#dcc79d"/>
+    <text x="486" y="240" fill="#3a2214" font-weight="bold">B Safari Tours · bad review</text>
+    <text x="486" y="258" fill="#7d6a52">new 1-star review detected</text>
+    <text x="486" y="273" fill="#f59e0b">alert sent to team · 18m ago</text>
+
+    <rect x="470" y="292" width="260" height="64" rx="10" fill="#efe3cf" stroke="#dcc79d"/>
+    <text x="486" y="316" fill="#3a2214" font-weight="bold">Karibu Cafe · contact changed</text>
+    <text x="486" y="334" fill="#7d6a52">phone number diff detected</text>
+    <text x="486" y="349" fill="#f59e0b">info synced ✓ 41m ago</text>
+  </g>
+
+  <!-- Bell -->
+  <circle cx="700" cy="112" r="16" fill="#c9a227" opacity="0.2"/>
+  <text x="700" y="118" text-anchor="middle" fill="#8a6516" font-size="14">🔔</text>
+</svg>

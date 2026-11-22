@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#f4ecdd"/>
+  <rect width="400" height="400" fill="none" stroke="#dcc79d" stroke-width="4" stroke-dasharray="10 8"/>
+  <circle cx="200" cy="160" r="70" fill="#dcc79d"/>
+  <path d="M80 360 q120 -110 240 0 z" fill="#dcc79d"/>
+  <text x="200" y="200" text-anchor="middle" fill="#7d6a52" font-family="Arial" font-size="15" font-weight="bold">Your photo here</text>
+  <text x="200" y="222" text-anchor="middle" fill="#8a7355" font-family="Arial" font-size="11">save your image as images/profile.jpg</text>
+</svg>
