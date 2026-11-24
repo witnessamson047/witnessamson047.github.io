@@ -189,7 +189,7 @@ if (fadeGroups.length > 0) {
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-  if (reduceMotion.matches) {
+  if (reduceMotion.matches || !("IntersectionObserver" in window)) {
     revealItems.forEach((el) => el.classList.add("is-revealed"));
   } else {
     const revealObserver = new IntersectionObserver((entries) => {
