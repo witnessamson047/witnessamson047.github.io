@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- CV / RESUME — print this page (Ctrl/Cmd + P) or use the button to save as PDF -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Witness Pasaka Samson</title>
+  <meta name="description" content="Curriculum vitae of Witness Pasaka Samson — full-stack web developer and Computer Systems and Networks student." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#3a2316" />
+  <link rel="canonical" href="https://witnessamson047.github.io/cv.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%233a2316'/><text x='16' y='22' text-anchor='middle' font-size='18' fill='%23c9a227' font-family='sans-serif' font-weight='700'>W</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #2f1b10;
+      --muted: #6f5b45;
+      --gold: #b98a24;
+      --gold-soft: #f3e8cf;
+      --line: #e0d2b8;
+      --paper: #fffdf8;
+      --bg: #f7f1e6;
+      --font-body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 13.5px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* toolbar (screen only) */
+    .toolbar {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center;
+      padding: 0.9rem 1rem;
+      background: rgba(247, 241, 230, 0.92);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(8px);
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      font-family: var(--font-display); font-weight: 600; font-size: 0.9rem;
+      padding: 0.6rem 1.1rem; border-radius: 999px; cursor: pointer;
+      border: 1px solid transparent; text-decoration: none;
+    }
+    .btn-primary { background: var(--ink); color: #fff; }
+    .btn-primary:hover { background: #462817; text-decoration: none; }
+    .btn-outline { border-color: var(--line); color: var(--ink); background: var(--paper); }
+    .btn-outline:hover { border-color: var(--gold); text-decoration: none; }
+
+    /* the sheet */
+    .sheet {
+      max-width: 800px; margin: 1.4rem auto 2.5rem;
+      background: var(--paper);
+      box-shadow: 0 20px 50px -24px rgba(47, 27, 16, 0.35);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 2.4rem 2.6rem;
+    }
+
+    header.cv-head {
+      display: flex; gap: 1.4rem; align-items: center;
+      padding-bottom: 1.2rem; border-bottom: 2px solid var(--ink);
+      margin-bottom: 1.4rem;
+    }
+    .cv-photo {
+      width: 96px; height: 96px; border-radius: 50%;
+      object-fit: cover; object-position: center 20%;
+      border: 3px solid var(--gold); flex: none;
+    }
+    .cv-head h1 {
+      font-family: var(--font-display); font-size: 1.9rem; line-height: 1.1;
+      margin: 0 0 0.15rem; letter-spacing: -0.02em;
+    }
+    .cv-head .role { color: var(--gold); font-weight: 600; font-size: 0.95rem; margin: 0 0 0.35rem; }
+    .cv-contact { color: var(--muted); font-size: 0.82rem; }
+    .cv-contact span { display: inline-block; margin-right: 0.9rem; white-space: nowrap; }
+
+    h2 {
+      font-family: var(--font-display); font-size: 0.82rem; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--gold);
+      margin: 1.5rem 0 0.55rem; padding-bottom: 0.3rem;
+      border-bottom: 1px solid var(--line);
+    }
+    h3 { font-size: 0.98rem; margin: 0.9rem 0 0.1rem; }
+    h3 + .meta { margin-top: 0; }
+    .meta { color: var(--muted); font-size: 0.82rem; margin: 0 0 0.3rem; }
+    p { margin: 0.35rem 0; }
+    ul { margin: 0.3rem 0 0.5rem; padding-left: 1.1rem; }
+    li { margin: 0.15rem 0; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.3rem 0 0.2rem; }
+    .tag {
+      font-size: 0.78rem; font-weight: 500;
+      background: var(--gold-soft); color: #6d4f14;
+      padding: 0.22rem 0.6rem; border-radius: 999px;
+    }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.2rem 1.6rem; }
+    .note { color: var(--muted); font-size: 0.78rem; margin-top: 1.4rem; border-top: 1px solid var(--line); padding-top: 0.7rem; }
+
+    /* print */
+    @page { size: A4; margin: 14mm; }
+    @media print {
+      body { background: #fff; font-size: 11.5px; }
+      .toolbar { display: none !important; }
+      .sheet {
+        max-width: none; margin: 0; padding: 0;
+        border: 0; border-radius: 0; box-shadow: none;
+      }
+      a { color: var(--ink); }
+      h2 { break-after: avoid; }
+      h3 { break-after: avoid; }
+      li, p { break-inside: avoid; }
+    }
+    @media (max-width: 620px) {
+      .sheet { padding: 1.4rem 1.1rem; margin: 0.8rem; }
+      header.cv-head { flex-direction: column; text-align: center; }
+      .two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <button type="button" class="btn btn-primary" onclick="window.print()">Download as PDF / Print</button>
+    <a class="btn btn-outline" href="index.html">&larr; Back to portfolio</a>
+  </div>
+
+  <main class="sheet" id="main">
+
+    <header class="cv-head">
+      <img class="cv-photo" src="images/profile-hero.jpg" alt="Portrait of Witness Pasaka Samson" width="96" height="96" />
+      <div>
+        <h1>Witness Pasaka Samson</h1>
+        <p class="role">Full-Stack Web Developer &middot; Computer Systems &amp; Networks Student</p>
+        <p class="cv-contact">
+          <span>&#9993; <a href="mailto:witnessamson047@gmail.com">witnessamson047@gmail.com</a></span>
+          <span>&#128222; <a href="tel:+255760989178">0760 989 178</a></span>
+          <span>&#128222; <a href="tel:+255624780670">0624 780 670</a></span>
+        </p>
+        <p class="cv-contact">
+          <span>&#128187; <a href="https://github.com/witnessamson047">github.com/witnessamson047</a></span>
+          <span>&#127760; <a href="https://witnessamson047.github.io">witnessamson047.github.io</a></span>
+        </p>
+      </div>
+    </header>
+
+    <h2>Profile</h2>
+    <p>
+      Computer Systems and Networks student at Ardhi University and a self-taught
+      full-stack developer. I build practical web tools with Laravel/PHP, Python and
+      MySQL &mdash; including website scrapers and a website health and security scanner.
+      Comfortable across the stack, from responsive front ends to background jobs and
+      data collection, with a strong interest in how sites are built, tested and protected.
+    </p>
+
+    <h2>Education</h2>
+    <h3>BSc Computer Systems and Networks &mdash; Ardhi University</h3>
+    <p class="meta">2024 &ndash; 2027 (in progress)</p>
+    <p>Networking fundamentals, system administration, security principles and the theory behind modern web infrastructure.</p>
+    <h3>Self-taught full-stack web development</h3>
+    <p class="meta">Since 2023</p>
+    <p>Learned by building production projects: responsive front ends (HTML, CSS, JavaScript), back ends (PHP &amp; Laravel), automation (Python) and databases (MySQL).</p>
+
+    <h2>Experience</h2>
+    <h3>Industrial Training &mdash; Oweru International Limited</h3>
+    <p class="meta">Oweru Tech Solutions platform</p>
+    <ul>
+      <li>Contributed to <strong>Oweru Tech Solutions</strong>, a website auditing platform built with Laravel, Python and MySQL.</li>
+      <li>Worked on <strong>website scraping and business discovery</strong> &mdash; collecting publicly available business information and organising it for analysis.</li>
+      <li>Worked on the <strong>website health and security scanner</strong> &mdash; automated checks that surface weaknesses and produce findings with recommendations.</li>
+      <li>Integrated a PHP/Laravel application with a Python scanning engine, including background queues, invoicing and continuous scraping for live users.</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <h3>Oweru Tech Solutions &mdash; website scraping &amp; security scanner</h3>
+    <p class="meta">Laravel &middot; Python &middot; MySQL</p>
+    <ul>
+      <li><strong>Discovery:</strong> finds real businesses from public map data and flags those without a website.</li>
+      <li><strong>Collection:</strong> crawls pages and extracts contacts, services, ratings and reviews.</li>
+      <li><strong>Scanning:</strong> runs automated checks across security, mobile friendliness, speed and trust, scoring each site.</li>
+      <li><strong>Reporting:</strong> each failed check explains what was found, why it matters and a suggested fix.</li>
+    </ul>
+    <h3>Business discovery engine</h3>
+    <p>Identifies local businesses from public map data and generates a polite outreach list. <span class="meta">(Python, Laravel, MySQL)</span></p>
+    <h3>Scraper watchdog</h3>
+    <p>Monitors scraping runs and raises alerts on rating drops or bad reviews. <span class="meta">(Python)</span></p>
+    <h3>Sales CRM &amp; online payment flow</h3>
+    <p>Internal CRM for tracking leads and a payment flow for subscriptions. <span class="meta">(Laravel, MySQL)</span></p>
+
+    <h2>Technical Skills</h2>
+    <div class="tag-row">
+      <span class="tag">HTML &amp; CSS</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">PHP &amp; Laravel</span>
+      <span class="tag">Python</span>
+      <span class="tag">MySQL</span>
+      <span class="tag">Networking fundamentals</span>
+      <span class="tag">Web security</span>
+      <span class="tag">Technical reporting</span>
+    </div>
+
+    <h2>Languages</h2>
+    <div class="two-col">
+      <p><strong>English</strong> &mdash; professional working proficiency</p>
+      <p><strong>Kiswahili</strong> &mdash; native</p>
+    </div>
+
+    <p class="note">References available on request. This CV is generated from the portfolio at witnessamson047.github.io.</p>
+
+  </main>
+
+</body>
+</html>
