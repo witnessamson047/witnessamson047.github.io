@@ -891,18 +891,25 @@ html[data-theme="dark"] .about-hero {
 }
 .about-hero-lead strong { color: var(--text); }
 .about-hero-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+/* Same circular treatment as the home page portrait */
 .about-hero-photo {
   position: relative;
-  width: min(100%, 420px);
+  width: min(100%, 380px);
   margin: 0;
   justify-self: center;
+  border: 1px solid rgba(217, 173, 63, 0.55);
+  border-radius: 50%;
+  background: #f7f1e6;
+  padding: 0.6rem;
+  box-shadow: 0 40px 90px -34px rgba(0, 0, 0, 0.75);
 }
 .about-hero-photo::before {
   content: "";
   position: absolute;
-  inset: -5% -5% 3%;
+  inset: -14px;
+  border: 1px solid rgba(217, 173, 63, 0.4);
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 38%, #f2c657 0%, #d9ad3f 58%, #b98a24 100%);
+  pointer-events: none;
 }
 .about-hero-photo img {
   position: relative;
@@ -911,10 +918,8 @@ html[data-theme="dark"] .about-hero {
   height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: 50% 16%;
+  object-position: 50% 18%;
   border-radius: 50%;
-  border: 7px solid #fdf8ee;
-  box-shadow: 0 30px 60px -30px rgba(20, 10, 4, 0.6);
 }
 
 /* Contact and skills strip (Skills page) */
@@ -1513,7 +1518,7 @@ html.js-reveal [data-fade] .reveal-item.is-revealed {
   .contact-wrap,
   .home-strip { grid-template-columns: 1fr; }
   .about-hero-grid { grid-template-columns: 1fr; }
-  .about-hero-photo { order: -1; width: min(100%, 320px); }
+  .about-hero-photo { order: -1; width: min(100%, 300px); }
   .info-band-grid { grid-template-columns: 1fr; }
   .about-story { column-count: 1; }
   .about-project { grid-template-columns: 1fr; }
