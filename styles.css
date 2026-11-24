@@ -506,7 +506,7 @@ ul { list-style: none; }
   max-width: 380px;
   margin-inline: auto;
   border: 1px solid rgba(217, 173, 63, 0.55);
-  border-radius: 22px;
+  border-radius: 50%;
   background: #f7f1e6;
   padding: 0.6rem;
   box-shadow: 0 40px 90px -34px rgba(0, 0, 0, 0.75);
@@ -516,22 +516,23 @@ ul { list-style: none; }
   position: absolute;
   inset: -14px;
   border: 1px solid rgba(217, 173, 63, 0.4);
-  border-radius: 30px;
+  border-radius: 50%;
   pointer-events: none;
 }
 .photo-frame img {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: 50% 22%;
-  border-radius: 16px;
+  object-position: 50% 18%;
+  border-radius: 50%;
 }
 
 .hero-badge {
   position: absolute;
-  left: max(0px, calc(50% - 190px));
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
   display: inline-flex;
   align-items: center;
