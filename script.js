@@ -158,21 +158,50 @@ if (skillsMore && skillsGrid) {
 }
 
 // ============================================================
-// 6) FADE-IN BLOCKS
+// 6) SCROLL REVEAL — staggered fade-up for groups of elements
+//
+//    Every [data-fade] is a group. Its children become reveal items,
+//    and a single wrapper (like .about-story or .card-body) has its
+//    own children revealed instead so paragraphs stagger too.
+//    Only opacity and transform animate, so nothing reflows.
 // ============================================================
-const fadeItems = document.querySelectorAll("[data-fade]");
+const fadeGroups = document.querySelectorAll("[data-fade]");
 
-if (fadeItems.length > 0) {
-  const fadeObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        fadeObserver.unobserve(entry.target);
-      }
+if (fadeGroups.length > 0) {
+  const revealItems = [];
+
+  fadeGroups.forEach((group) => {
+    let items = Array.from(group.children);
+
+    // One wrapper holding several blocks: stagger its children.
+    if (items.length === 1 && items[0].children.length > 1) {
+      items = Array.from(items[0].children);
+    }
+
+    items.forEach((item, index) => {
+      if (item.classList.contains("reveal-item")) return;
+      item.classList.add("reveal-item");
+      // Cap the stagger so long lists never feel slow.
+      item.style.setProperty("--reveal-delay", Math.min(index, 6) * 70 + "ms");
+      revealItems.push(item);
     });
-  }, { threshold: 0.12 });
+  });
 
-  fadeItems.forEach((el) => fadeObserver.observe(el));
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  if (reduceMotion.matches) {
+    revealItems.forEach((el) => el.classList.add("is-revealed"));
+  } else {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-revealed");
+        revealObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+
+    revealItems.forEach((el) => revealObserver.observe(el));
+  }
 }
 
 // ============================================================

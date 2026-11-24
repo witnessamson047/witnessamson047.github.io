@@ -12,6 +12,11 @@
 (function () {
   "use strict";
 
+  // Enable the scroll-reveal styles before the first paint. Without this
+  // class the CSS leaves every element visible, so the site works with
+  // JavaScript disabled.
+  document.documentElement.classList.add("js-reveal");
+
   var STORAGE_KEY = "lang";
   var DEFAULT_LANG = "en";
 
