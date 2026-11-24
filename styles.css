@@ -766,6 +766,8 @@ html[data-theme="dark"] .page-hero {
   color: var(--text-muted);
 }
 .card-footer .chips { margin: 0; }
+/* Project cards end with the action links only, kept together on the right */
+.card-footer > .card-action:first-child { margin-left: auto; }
 .card-footer .card-meta {
   font-size: 0.74rem;
   font-weight: 600;
